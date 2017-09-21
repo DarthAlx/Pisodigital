@@ -59,7 +59,7 @@
                               <td style="width: 30%;"><span>{{$datos->habitacion}}</span></td>
                               <td style="width: 30%;"><span>{{$datos->vista}}</span></td>
                               <td style="width: 20%;"><span>{{$datos->adultos}}</span></td>
-                              <td style="width: 20%;"><span>{{$datos->niños}}</span></td>
+                              <td style="width: 20%;"><span>{{$datos->ninos}}</span></td>
 
 
 														</tr>

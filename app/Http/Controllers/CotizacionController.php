@@ -49,8 +49,8 @@ class CotizacionController extends Controller
 
         $paquete = Paquete::where('habitacion_id', $request->habitacion)->where('vista_id', $request->vista)->first();
         $adultos=$request->adultos;
-        $niños=$request->niños;
-        $personas=$adultos+$niños;
+        $ninos=$request->ninos;
+        $personas=$adultos+$ninos;
         $nombre = $request->nombre;
         $edad = $request->edad;
         $correo = $request->email;
@@ -107,7 +107,7 @@ class CotizacionController extends Controller
             ]);*/
             $precio="Error: Esta habitación es solo para cuatro personas.";
           }
-          elseif ($niños>0) {
+          elseif ($ninos>0) {
             /*return response()->json([
               'success' => 'error',
               'msg' => "Esta habitación es solo para mayores de 18 años."
@@ -127,7 +127,7 @@ class CotizacionController extends Controller
         }
 
         if ($request->habitacion==4) {//jr sharing
-          if ($niños>3) {
+          if ($ninos>3) {
             /*return response()->json([
               'success' => 'error',
               'msg' => "Esta habitación es solo para 3 personas."
@@ -154,7 +154,7 @@ class CotizacionController extends Controller
         }
 
         if ($request->habitacion==5) {//kids sharing
-          if ($niños>3) {
+          if ($ninos>3) {
             /*return response()->json([
               'success' => 'error',
               'msg' => "Esta habitación es solo para 3 personas."
@@ -181,7 +181,7 @@ class CotizacionController extends Controller
         }
 
         if ($request->habitacion==6) {//extra room kids
-          if ($niños>3) {
+          if ($ninos>3) {
             /*return response()->json([
               'success' => 'error',
               'msg' => "Esta habitación es solo para 3 personas."
@@ -208,7 +208,7 @@ class CotizacionController extends Controller
         }
 
         if ($request->habitacion==7) {//extra night
-          if ($niños>3) {
+          if ($ninos>3) {
             /*return response()->json([
               'success' => 'error',
               'msg' => "Esta habitación solo puede alojar 3 menores."
@@ -242,10 +242,10 @@ class CotizacionController extends Controller
 
         $datos=$guardar;
 
-        $user = ['email' => $correo,'nombre' => $correo];
+        $user = ['email' => $correo,'nombre' => $nombre];
 
         Mail::send('emails.cotizacion', ['datos'=>$datos], function ($m) use ($user) {
-            $m->from('alxunscarred@gmail.com', 'Organización Hafikoman');
+            $m->from('cotizador@desarrollo-pd.com', 'Organización Hafikoman');
             $m->to($user['email'], $user['nombre'])->subject('Cotización');
         });
 

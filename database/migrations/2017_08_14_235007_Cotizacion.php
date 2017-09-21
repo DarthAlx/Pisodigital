@@ -20,7 +20,7 @@ class Cotizacion extends Migration
         $table->string('habitacion');
         $table->string('vista');
         $table->integer('adultos');
-        $table->integer('niños');
+        $table->integer('ninos');
         $table->integer('telefono');
         $table->string('paquete');
         $table->timestamps();
