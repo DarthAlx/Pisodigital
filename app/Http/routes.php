@@ -40,3 +40,5 @@ Route::get('/vistas', function () {
 
 
 Route::post('cotizar', 'CotizacionController@store');
+
+Route::get('reporte', 'CotizacionController@show');
