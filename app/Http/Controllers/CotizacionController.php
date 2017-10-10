@@ -65,7 +65,7 @@ class CotizacionController extends Controller
               'success' => 'error',
               'msg' => "Esta habitación es para una sola persona."
             ]);*/
-            return redirect()->intended("http://desarrollo-pd.com/cotizador2?error=1");
+            return redirect()->intended("http://desarrollo-pd.com/cotizador2?error=1")->with('error', "holatest");
             $precio="Error: Esta habitación es para una sola persona.";
           }
           else {
