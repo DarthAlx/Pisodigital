@@ -257,7 +257,7 @@ class CotizacionController extends Controller
         $user = ['email' => $correo,'nombre' => $correo];
 
         Mail::send('emails.cotizacion', ['datos'=>$datos], function ($m) use ($user) {
-            $m->from('alxunscarred@gmail.com', 'Organización Hafikoman');
+            $m->from('cotizador@desarrollo-pd.com', 'Organización Hafikoman');
             $m->to($user['email'], $user['nombre'])->subject('Cotización');
         });
 
