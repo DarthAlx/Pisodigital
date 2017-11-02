@@ -6,7 +6,7 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 				<style type="text/css">
-						body { margin: 0px; }     body, table { font: 18px "Lucida Grande", Arial, Verdana, sans-serif; }     table.border { font: 18px "Lucida Grande", Arial, Verdana, sans-serif; }     table.border { border-right: 1px solid #eee; border-bottom: 1px solid #eee; }     table.border td { border-top: 1px solid #eee; border-left: 1px solid #eee; }     table span { color: #888; }
+						body { margin: 0px; }     body, table { font: 14px "Lucida Grande", Arial, Verdana, sans-serif; }     table.border { font: 14px "Lucida Grande", Arial, Verdana, sans-serif; }     table.border { border-right: 1px solid #eee; border-bottom: 1px solid #eee; }     table.border td { border-top: 1px solid #eee; border-left: 1px solid #eee; }     table span { color: #888; }
 				</style>
 
 		</head>
