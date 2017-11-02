@@ -41,7 +41,7 @@ Route::get('/vistas', function () {
 
 Route::post('cotizar', 'CotizacionController@store');
 Route::get('/reporte', function () {
-  $cotizaciones=Cotizacion::all();
+  $cotizaciones=App\Cotizacion::all();
     return view('reporte', ['cotizaciones'=>$cotizaciones]);
 
 });
