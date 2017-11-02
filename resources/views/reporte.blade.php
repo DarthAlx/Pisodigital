@@ -6,11 +6,12 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 				<style type="text/css">
-						body { margin: 0px; }     body, table { font: 10px/18px "Lucida Grande", Arial, Verdana, sans-serif; }     table.border { font: 11px/18px "Lucida Grande", Arial, Verdana, sans-serif; }     table.border { border-right: 1px solid #eee; border-bottom: 1px solid #eee; }     table.border td { border-top: 1px solid #eee; border-left: 1px solid #eee; }     table span { color: #888; }
+						body { margin: 0px; }     body, table { font: 18px "Lucida Grande", Arial, Verdana, sans-serif; }     table.border { font: 18px "Lucida Grande", Arial, Verdana, sans-serif; }     table.border { border-right: 1px solid #eee; border-bottom: 1px solid #eee; }     table.border td { border-top: 1px solid #eee; border-left: 1px solid #eee; }     table span { color: #888; }
 				</style>
 
 		</head>
 		<body>
+			<div class="container">
 				<table class="invoice" width="100%" cellspacing="0" cellpadding="6">
 						<tbody>
 							<tr>
@@ -79,5 +80,7 @@
 								</tr>
 						</tbody>
 				</table>
+			</div>
+
 		</body>
 </html>
