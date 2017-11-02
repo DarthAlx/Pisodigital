@@ -51,25 +51,22 @@
 																<td style="width: 10%;"><span>Telefono</span></td>
                                 <td style="width: 10%;"><span>Cotización</span></td>
 														</tr>
+														@foreach ($cotizaciones as $datos)
+															<tr class="text">
+																<td style="width: 20%;"><span>{{$datos->nombre}}</span></td>
+																<td style="width: 5%;"><span>{{$datos->edad}}</span></td>
+																<td style="width: 10%;"><span>{{$datos->email}}</span></td>
+																<td style="width: 10%;"><span>{{$datos->habitacion}}</span></td>
+																<td style="width: 10%;"><span>{{$datos->vista}}</span></td>
+																<td style="width: 5%;"><span>{{$datos->adultos}}</span></td>
+																<td style="width: 5%;"><span>{{$datos->ninos}}</span></td>
+																<td style="width: 10%;"><span>{{$datos->telefono}}</span></td>
+																<td style="width: 10%;"><span>{{$datos->paquete}}</span></td>
+															</tr>
+														@endforeach
+
 												</tbody>
 										</table>
-										@foreach ($cotizaciones as $datos)
-										<table class="border" width="100%" cellspacing="0" cellpadding="6">
-												<tbody>
-													<tr class="text">
-														<td style="width: 20%;"><span>{{$datos->nombre}}</span></td>
-														<td style="width: 5%;"><span>{{$datos->edad}}</span></td>
-														<td style="width: 10%;"><span>{{$datos->email}}</span></td>
-														<td style="width: 10%;"><span>{{$datos->habitacion}}</span></td>
-														<td style="width: 10%;"><span>{{$datos->vista}}</span></td>
-														<td style="width: 5%;"><span>{{$datos->adultos}}</span></td>
-														<td style="width: 5%;"><span>{{$datos->ninos}}</span></td>
-														<td style="width: 10%;"><span>{{$datos->telefono}}</span></td>
-														<td style="width: 10%;"><span>{{$datos->paquete}}</span></td>
-														</tr>
-												</tbody>
-										</table>
-										@endforeach
 
 
 										</td>
